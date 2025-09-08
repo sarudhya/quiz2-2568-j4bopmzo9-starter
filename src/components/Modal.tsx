@@ -1,15 +1,15 @@
-import { useState } from "react";
-import {
-  Modal,
-  TextInput,
-  NumberInput,
-  Select,
-  Button,
-  Stack,
-  Box,
-  Group,
-} from "@mantine/core";
-import type { Container } from "react-dom/client";
+// import { useState } from "react";
+// import {
+//   Modal,
+//   TextInput,
+//   NumberInput,
+//   Select,
+//   Button,
+//   Stack,
+//   Box,
+//   Group,
+// } from "@mantine/core";
+// import type { Container } from "react-dom/client";
 
 type AddFoodModalProps = {
   opened: boolean;
@@ -23,40 +23,40 @@ type AddFoodModalProps = {
 };
 
 export default function AddFoodModal({
-  opened,
-  onClose,
-  onAdd,
+  // opened,
+  // onClose,
+  // onAdd,
 }: AddFoodModalProps) {
-  const [name, setName] = useState<string>("");
-  const [price, setPrice] = useState<number | string>(0);
-  const [quantity, setQuantity] = useState<number | string>(0);
-  const [category, setCategory] = useState<string | null>(null);
+  // const [name, setName] = useState<string>("");
+  // const [price, setPrice] = useState<number | string>(0);
+  // const [quantity, setQuantity] = useState<number | string>(0);
+  // const [category, setCategory] = useState<string | null>(null);
 
-  const handleSubmit = () => {
-    if(!name.trim() || !price || !quantity || !category) return;
-    onAdd(name,price,quantity,category);
-    setName("");
-    setPrice(0);
-    setQuantity(0);
-    setCategory(null);
-  };
+  // const handleSubmit = () => {
+  //   if(!name.trim() || !price || !quantity || !category) return;
+  //   onAdd(name,price,quantity,category);
+  //   setName("");
+  //   setPrice(0);
+  //   setQuantity(0);
+  //   setCategory(null);
+  // };
 
   // หากต้องการแปง type string เป็น type number สามารถดูตัวอย่างนี้ได้
   let val_number: number = Number("500.0");
   console.log(val_number + 100); // 600.0
 
-  const nameInput = (event:any) => { 
-    setName(event.target.value)
-  }
-  const priceInput = (event:any) => {
-    setPrice(event.target.value)
-  }
-  const quanInput = (event:any) => {
-    setQuantity(event.target.value)
-  }
-  const cateInput = (event:any) => {
-    setCategory(event.target.value)
-  }
+  // const nameInput = (event:any) => { 
+  //   setName(event.target.value)
+  // }
+  // const priceInput = (event:any) => {
+  //   setPrice(event.target.value)
+  // }
+  // const quanInput = (event:any) => {
+  //   setQuantity(event.target.value)
+  // }
+  // const cateInput = (event:any) => {
+  //   setCategory(event.target.value)
+  // }
   
   
 
